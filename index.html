@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">PHONESTORE</a>
@@ -50,7 +50,7 @@
     </header>
     <main>
         <section class="hero">
-            <div id="carouselExample" class="carousel-slide">
+            <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="./img/carrusel/carruseluno.jpg" class="d-block w-100" alt="...">
@@ -72,6 +72,35 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
+            </div>
+        </section>
+        <section class="marcas">
+            <h2>Las marcas mas reconocidas</h2>
+            <div>
+                <a href="">
+                    <img src="./img/marcas/apple.png" alt="">
+                </a>
+                <a href="">
+                    <img class="carrito" src="./img/marcas/lg.png" alt="">
+                </a>
+                <a href="">
+                    <img class="carrito" src="./img/marcas/motorola.png" alt="">
+                </a>
+                <a href="">
+                    <img class="carrito" src="./img/marcas/huawei.png" alt="">
+                </a>
+                <a href="">
+                    <img class="carrito" src="./img/marcas/nokia.png" alt="">
+                </a>
+                <a href="">
+                    <img class="carrito" src="./img/marcas/samsung.png" alt="">
+                </a>
+                <a href="">
+                    <img class="carrito" src="./img/marcas/sony.png" alt="">
+                </a>
+                <a href="">
+                    <img class="carrito" src="./img/marcas/xiaomi.png" alt="">
+                </a>
             </div>
         </section>
         <section class="destacado">
@@ -111,27 +140,71 @@
                     </div>
                 </div>
             </div>
+        </section>        
+        <section class="accesorio">            
+            <div>
+                <h2>Compra accesorios al mejor precio</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit excepturi ipsa voluptate voluptatem
+                    non ab cupiditate quisquam obcaecati, veniam tenetur ipsum adipisci nisi unde porro quae, eaque
+                    quaerat exercitationem. Distinctio. ipsum dolor sit, amet consectetur adipisicing elit. Minima optio asperiores, ipsam temporibus placeat perferendis similique inventore consectetur, eveniet error quos expedita. Maiores quae praesentium quibusdam, ducimus deleniti distinctio repellendus!</p>
+            </div>
+            <img src="./img/accesorios/accesorio.jpg" alt="">
+        </section>
+        <section class="nosotros">
+            <h2>Quienes somos y porque deberias elegirnos</h2>
+            <div>
+                <img src="./img/me/presentacion.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vel quo quidem est enim voluptate
+                    accusamus et, voluptatibus eius earum debitis optio blanditiis soluta, alias reiciendis rerum ullam
+                    ipsum quod? ipsum dolor sit amet consectetur adipisicing elit. Quos nostrum provident, dolore
+                    quibusdam deserunt debitis ex mollitia tempore dicta laboriosam amet aperiam perferendis sit
+                    similique iusto modi enim nihil tempora?</p>
+            </div>
         </section>
     </main>
-    <footer>
-        <section class="redes">
-            <div>
+    <footer class="footer">
+        <div class="footer-contenedor">
+            <div class="mapa">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210147.47613877675!2d-58.5984548256373!3d-34.61542988674993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1718647076593!5m2!1ses-419!2sar"
                     width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="logos">
-                <img src="./img/logos/facebook.png" alt="">
-                <img src="./img/logos/instagram.png" alt="">
+            <div class="footer-div">
+                <h4>Sobre Nosotros</h4>
+                <ul>
+                    <li><a href="#">Nuestra Historia</a></li>
+                    <li><a href="#">Misión y Visión</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                </ul>
             </div>
-        </section>
-        <section class="redes-mobile">
-            <h2>Nuestras redes</h2>
-            <a href="">whatsapp</a>
-            <a href="">Instagram</a>
-            <a href="">facebook</a>
-        </section>
+            <div class="footer-div">
+                <h4>Soporte</h4>
+                <ul>
+                    <li><a href="#">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Centro de Ayuda</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-div">
+                <h4>Síguenos</h4>
+                <ul class="redes-iconos">
+                    <li><a href=""><img src="./img/logos/facebook.png" alt="Facebook">Facebook</a></li>
+                    <li><a href=""><img src="./img/logos/X.png" alt="Twitter">X</a></li>
+                    <li><a href=""><img src="./img/logos/instagram.png" alt="Instagram">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-div">
+                <h4>Contacto</h4>
+                <p>0810 111 2222</p>
+                <p>Lunes a Viernes: 08:00 a 18:00</p>
+                <p>Sábados: cerrado</p>
+                <p>Domingos: cerrado</p>
+            </div>
+        </div>
+        <div class="footer-final">
+            <p>&copy; 2024 Tu Empresa. Todos los derechos reservados.</p>
+        </div>
     </footer>
     <img src="./img/logos/whatsapp.png" alt="" class="whatsapp">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

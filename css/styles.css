@@ -155,36 +155,47 @@
 }
 
 /**-----CONTACTOS-------*/
-.datos {    
-    display: flex;
-    justify-content: center;
-}
-.datos-contenedor {
-    border-color: gray;
-    display: flex;    
-    width: 400px;
+.datos {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
     padding: 20px;
-    flex-direction: column;
-    align-items: start;
+    max-width: 800px;
+    margin: auto;
 }
-.datos-contenedor div {
-    display: start;
-    justify-content: center;
+h1 {
+    text-align: center;
 }
-.datos-contenedor div input{
-    display: flex;
-    justify-content: start;
+
+.contacto, .contacto-info {
+    margin-bottom: 40px;
 }
-.datos-contenedor div label{
-    display: flex;
-    justify-content: start;
+
+label {
+    display: block;
+    margin: 10px 0 5px;
 }
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 .boton {
-    display: flex;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    border-radius: 5px;
+    border:none
 }
-.boton input{
-    display: flex;
-    margin: 10px;
+
+button:hover {
+    background-color: #555;
+    color: white
 }
 /**-----LOGIN-------*/
 .registro-contenedor h3 {
@@ -250,7 +261,6 @@
     grid-template-columns: 1fr 3fr;
     gap: 16px;
     max-width: 1200px;
-
     padding: 0 16px;
     box-sizing: border-box;
 }

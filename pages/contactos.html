@@ -46,33 +46,18 @@
     </nav>
 </header>
     <main class="datos"> 
-        <div class="datos-contenedor">
-            <h3>CONTACTE CON NOSOTROS</h3>
-            <div>
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre">
-            </div>
-            <div>
-                <label for="nombre">Apellido:</label>
-                <input type="text" name="nombre" id="nombre">
-            </div>
-            <div>
-                <label for="text">Asunto:</label>
-                <input type="text" name="nombre" id="nombre">
-            </div>
-            <div>
-                <label for="text">Direccion de Correo:</label>
-                <input type="text" name="nombre" id="nombre">
-            </div>
-            <div>
-                <label for="text">Escribenos:</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </div>
-            <div class="boton">
-                <input type="submit">
-                <input type="reset">
-            </div>
-        </div>
+        <section class="contacto">
+            <h1>Contactate con nosotros</h1>
+            <form action="#" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button class=boton type="submit">Enviar</button>
+            </form>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer-contenedor">

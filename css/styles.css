@@ -1,17 +1,19 @@
 /*!-------------RESET------------------------------------------------------------------------------------------------------------*/
 /**-----INDEX-------*/
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /*!------------HEADER-------------------------------------------------------------------------------------------------------------*/
-.header-icono a img{
+.header-icono a img {
     width: 40px;
     height: 40px;
     margin: 10px;
 }
-.header-icono a{
+
+.header-icono a {
     text-decoration: none;
 }
 
@@ -24,6 +26,7 @@
     padding-bottom: 50px;
     padding-top: 50px;
 }
+
 .destacado-contenedor {
     flex-wrap: wrap;
     display: flex;
@@ -31,29 +34,37 @@
     text-align: center;
     padding: 20px;
 }
+
 .marcas {
     padding: 30px;
     border-top: 2px;
     border-color: gray;
 }
+
 .marcas h2 {
     margin-bottom: 20px;
 }
+
 .marcas div {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
-.marcas div a{
+
+.marcas div a {
     text-decoration: none;
 }
-.marcas div a img{
+
+.marcas div a img {
     width: 60px;
     height: 60px;
     margin: 10px;
 }
+
 .destacado h2 {
     font-size: 40px;
 }
+
 .tarjeta-producto {
     margin: 20px;
     background-color: white;
@@ -72,7 +83,7 @@
 .tarjeta-imagen {
     width: 100%;
     height: 200px;
-    object-fit:contain;
+    object-fit: contain;
 }
 
 .tarjeta-info {
@@ -108,6 +119,7 @@
     background-color: gray;
     color: white;
 }
+
 .accesorio {
     background-color: rgb(243, 243, 243);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -119,11 +131,13 @@
     margin-bottom: 100px;
     display: flex;
 }
+
 .accesorio img {
     width: 700px;
     height: auto;
 }
-.accesorio div p{
+
+.accesorio div p {
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -135,14 +149,17 @@
     margin-top: 100px;
     margin-bottom: 100px;
 }
+
 .nosotros div {
     display: flex;
 }
-.nosotros div img{
+
+.nosotros div img {
     width: 600px;
     height: auto;
     margin: 20px;
 }
+
 .nosotros p {
     margin: 20px;
 }
@@ -162,11 +179,12 @@
     max-width: 800px;
     margin: auto;
 }
+
 h1 {
     text-align: center;
 }
 
-.contacto, .contacto-info {
+.contacto {
     margin-bottom: 40px;
 }
 
@@ -187,54 +205,48 @@ input, textarea {
     display: block;
     width: 100%;
     padding: 10px;
-    background-color: gray;
-    color: white;
+    background-color: rgb(185, 185, 185);
+    color: rgb(0, 0, 0);
     border-radius: 5px;
-    border:none
+    border: none
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #838383;
     color: white
 }
+
 /**-----LOGIN-------*/
-.registro-contenedor h3 {
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-}
-.registro-contenedor {
-    border-color: gray;
-    display: flex;    
+.registro {
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
     padding: 20px;
-    flex-direction: column;
-    align-items: center;
+    max-width: 500px;
+    margin: auto;
 }
-.registro-contenedor div {
-    display: start;
-    justify-content: center;
+
+h3 {
+    text-align: center;
 }
-.registro-contenedor div input{
-    display: flex;
-    justify-content: start;
+
+.registro-contenedor {
+    margin-bottom: 40px;
 }
-.registro-contenedor div label{
-    display: flex;
-    justify-content: start;
-}
-.registro-boton {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background-color: black;
-    width: 120px;
-    margin: 10px;
+
+.login-boton {
+    display: block;
+    width: 100%;
     padding: 10px;
-    border-radius: 15px;
+    margin-top: 30px;
+    background-color: rgb(185, 185, 185);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    border: none
 }
-.registro-boton a {
-    color: white;
-    text-decoration: none;
+
+button:hover {
+    background-color: #838383;
+    color: white
 }
 
 /**-----NOTICIAS-------*/
@@ -242,13 +254,16 @@ button:hover {
     display: flex;
     flex-direction: column;
 }
+
 .noticias h1 {
     margin: 20px;
 }
+
 .noticias div {
     display: flex;
     margin: 20px;
 }
+
 .noticias div a {
     text-decoration: none;
     border-top-color: gray;
@@ -284,7 +299,8 @@ button:hover {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 16px;
 }
-main h2{
+
+.producto h2 {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -300,12 +316,13 @@ main h2{
     box-shadow: 4px rgba(0, 0, 0, 0.1);
 }
 
-.mapa iframe{
+.mapa iframe {
     width: 300px;
     height: 300px;
     border-radius: 10px;
 }
-.footer-contenedor{
+
+.footer-contenedor {
     margin-left: 30px;
     margin-right: 30px;
     display: flex;
@@ -343,10 +360,6 @@ main h2{
     text-decoration: underline;
 }
 
-.footer-div p {
-    margin: 5px 0;
-}
-
 .redes-iconos li {
     margin-right: 10px;
 }
@@ -363,24 +376,118 @@ main h2{
     background-color: #2b2b2b;
     margin-top: 20px;
 }
-/*!----------------------------MEDIA QUIERIS-----------------------------------------------------------*/
 
-@media screen and (max-width: 800px){
+/*!----------------------------MEDIA QUIERIS-----------------------------------------------------------*/
+/*--------------footer------------------*/
+@media screen and (max-width: 360px){
+    .mapa iframe {
+        width: 95%;
+    }
+}
+/*--------------index------------------*/
+@media screen and (max-width: 800px) {
+    .accesorio {
+        padding: 10px;
+    }
+    .accesorio-img {
+        display: none;
+    }
+    .accesorio div p {
+        justify-content: center;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .nosotros div p {
+        justify-content: center;
+        width: 100%;
+    }
+    .nosotros-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
     .carousel-slide {
         display: none;
     }
+
     .redes div iframe {
         display: none;
     }
+
     .whatsapp {
         display: none;
     }
+
     .logos {
         display: none;
     }
 }
+
 @media screen and (min-width: 800px) {
     .redes-mobile {
         display: none;
+    }
+}
+/*--------------productos------------------*/
+@media screen and (max-width: 900px) {
+    .catalogo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .tarjeta-producto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+
+    .tarjeta-imagen {
+        width: 100%;
+        max-width: 200px;
+        object-fit: contain;
+    }
+
+    .tarjeta-info {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    @media (max-width: 630px) {
+        .catalogo {
+            flex-direction: column;
+            width: 100%;
+        }
+        .filtros{
+            width: 97%;
+            margin: 5px;
+        }
+        .productos {
+            display: block;
+        }
+        .tarjeta-producto {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-around;
+            height: 200px;
+            width: 90%;
+            margin: 10px;
+        }
+
+        .tarjeta-imagen {
+            max-height: 90%;
+            width: 170px;
+        }
+
+        .tarjeta-info {
+            width: fit-content;
+            text-align: left;
+        }
     }
 }

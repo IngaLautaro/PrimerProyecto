@@ -1,0 +1,108 @@
+/*--------------footer------------------*/
+@media screen and (max-width: 360px){
+    .mapa iframe {
+        width: 95%;
+    }
+}
+/*--------------index------------------*/
+@media screen and (max-width: 800px) {
+    .accesorio {
+        padding: 10px;
+    }
+    .accesorio-img {
+        display: none;
+    }
+    .accesorio div p {
+        justify-content: center;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .nosotros div p {
+        justify-content: center;
+        width: 100%;
+    }
+    .nosotros-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .carousel-slide {
+        display: none;
+    }
+
+    .redes div iframe {
+        display: none;
+    }
+
+    .whatsapp {
+        display: none;
+    }
+
+    .logos {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .redes-mobile {
+        display: none;
+    }
+}
+/*--------------productos------------------*/
+@media screen and (max-width: 900px) {
+    .tarjeta-producto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #fff;
+    }
+    .tarjeta-imagen {
+        width: 100%;
+        max-width: 200px;
+        object-fit: contain;
+    }
+    .tarjeta-info {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 630px) {
+    .producto .catalogo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .producto .catalogo .filtros {
+        width: 100%;
+        margin-bottom: 20px;
+        margin: 5px;
+    }
+    .producto .catalogo .productos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .producto .catalogo .productos .tarjeta-producto {
+        width: 95%;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        height: 200px;
+        margin: 10px;
+    }
+    .tarjeta-imagen {
+        max-height: 90%;
+        width: 170px;
+    }
+    .tarjeta-info {
+        width: fit-content;
+        text-align: left;
+    }
+}

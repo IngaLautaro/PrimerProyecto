@@ -1,0 +1,60 @@
+footer{
+    background-color: #575757;
+    color: #ffffff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    box-shadow: 4px rgba(0, 0, 0, 0.1);
+    .footer-contenedor{
+        margin-left: 30px;
+        margin-right: 30px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .mapa{
+            iframe{
+                width: 300px;
+                height: 300px;
+                border-radius: 10px;
+            }
+        }
+        .footer-div{
+            flex: 1;
+            max-width: 300px;
+            min-width: 200px;
+            margin: 10px;
+            h4{
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+            ul{
+                list-style: none;
+                padding: 0;
+                li{
+                    margin-bottom: 10px;
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .redes-iconos{
+                li{
+                    img{
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .footer-final{
+        text-align: center;
+        padding: 10px 0;
+        background-color: #2b2b2b;
+        margin-top: 20px;
+    }
+}

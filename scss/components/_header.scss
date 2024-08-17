@@ -1,6 +1,13 @@
 header{
     nav{
         div{
+            a {
+                img{
+                    width: 40px;
+                    height: 40px;
+                    margin: 10px;
+                }
+            }
             .header-icono{
                 a{
                     text-decoration: none;

@@ -9,6 +9,11 @@
   bottom: 80px;
   right: 50px; }
 
+header nav div a img {
+  width: 40px;
+  height: 40px;
+  margin: 10px; }
+
 header nav div .header-icono a {
   text-decoration: none; }
   header nav div .header-icono a img {
@@ -17,11 +22,20 @@ header nav div .header-icono a {
     margin: 10px; }
 
 /**-----INDEX-------*/
+.index .hero {
+  margin-top: 20px; }
+
 .index .marcas {
-  padding: 30px;
-  border-top: 2px;
-  border-color: gray; }
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 100%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #f3f3f3; }
   .index .marcas h2 {
+    text-align: center;
     margin-bottom: 20px; }
   .index .marcas div {
     display: flex;
@@ -34,14 +48,145 @@ header nav div .header-icono a {
         height: 60px;
         margin: 10px; }
 
+.index .ofertas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #f3f3f3; }
+  .index .ofertas h2 {
+    text-align: center;
+    margin-bottom: 20px; }
+  .index .ofertas div {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px; }
+    .index .ofertas div .tarjeta-producto {
+      margin: 20px;
+      background-color: white;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      transition: transform 0.2s; }
+      .index .ofertas div .tarjeta-producto:hover {
+        transform: translateY(-5px); }
+      .index .ofertas div .tarjeta-producto .tarjeta-imagen {
+        width: 100%;
+        height: 200px;
+        padding: 2px;
+        object-fit: contain; }
+      .index .ofertas div .tarjeta-producto .tarjeta-info {
+        padding: 16px; }
+        .index .ofertas div .tarjeta-producto .tarjeta-info .tarjeta-nombre {
+          font-size: 1.2em;
+          margin: 0 0 8px;
+          color: #333; }
+        .index .ofertas div .tarjeta-producto .tarjeta-info .tarjeta-precio {
+          width: 100%;
+          text-align: justify;
+          font-size: 1.1em;
+          margin: 0 0 16px;
+          color: #333; }
+        .index .ofertas div .tarjeta-producto .tarjeta-info .tarjeta-oferta {
+          width: 100%;
+          text-align: justify;
+          font-size: 1.1em;
+          margin: 0 0 16px;
+          color: #00a650; }
+        .index .ofertas div .tarjeta-producto .tarjeta-info .tarjeta-boton {
+          border: none;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 1em;
+          border-radius: 4px;
+          cursor: pointer;
+          width: 100%;
+          box-sizing: border-box; }
+          .index .ofertas div .tarjeta-producto .tarjeta-info .tarjeta-boton:hover {
+            background-color: gray;
+            color: white; }
+
+.index .reviews {
+  padding: 20px;
+  background-image: url(../img/me/presentacion.jpg); }
+  .index .reviews .reviews-contenedor {
+    background-color: #fff;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; }
+    .index .reviews .reviews-contenedor h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+      font-size: 28px; }
+    .index .reviews .reviews-contenedor .review {
+      margin-bottom: 20px;
+      padding: 15px;
+      border-bottom: 1px solid #eee; }
+      .index .reviews .reviews-contenedor .review:last-child {
+        border-bottom: none; }
+      .index .reviews .reviews-contenedor .review h3 {
+        color: #555;
+        margin-bottom: 10px;
+        font-size: 20px; }
+      .index .reviews .reviews-contenedor .review p {
+        color: #666;
+        line-height: 1.6; }
+        .index .reviews .reviews-contenedor .review p.cliente {
+          font-style: italic;
+          color: #999; }
+    .index .reviews .reviews-contenedor .dejar-review {
+      text-align: center;
+      margin-top: 30px; }
+      .index .reviews .reviews-contenedor .dejar-review h3 {
+        color: #333;
+        margin-bottom: 15px;
+        font-size: 24px; }
+      .index .reviews .reviews-contenedor .dejar-review p {
+        color: #666;
+        margin-bottom: 20px;
+        line-height: 1.6; }
+      .index .reviews .reviews-contenedor .dejar-review .boton {
+        background-color: #b9b9b9;
+        color: black;
+        border-radius: 5px;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1em;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        box-sizing: border-box; }
+        .index .reviews .reviews-contenedor .dejar-review .boton:hover {
+          background-color: gray;
+          color: white; }
+
 .index .destacado {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 50px;
-  padding-top: 50px; }
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #f3f3f3; }
   .index .destacado h2 {
-    font-size: 40px; }
+    font-size: 32px;
+    text-align: center; }
   .index .destacado .destacado-contenedor {
     flex-wrap: wrap;
     display: flex;
@@ -62,6 +207,7 @@ header nav div .header-icono a {
       .index .destacado .destacado-contenedor .tarjeta-producto .tarjeta-imagen {
         width: 100%;
         height: 200px;
+        padding: 2px;
         object-fit: contain; }
       .index .destacado .destacado-contenedor .tarjeta-producto .tarjeta-info {
         padding: 16px; }
@@ -89,36 +235,63 @@ header nav div .header-icono a {
             color: white; }
 
 .index .accesorio {
-  background-color: #f3f3f3;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-bottom: 20px;
-  padding-left: 100px;
-  padding-right: 100px;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  display: flex; }
-  .index .accesorio div p {
-    padding-left: 40px;
-    padding-right: 40px; }
-  .index .accesorio .accesorio-img {
-    width: 700px;
-    height: auto; }
-
-.index .nosotros {
-  background-color: #f3f3f3;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-top: 100px;
-  margin-bottom: 100px; }
-  .index .nosotros div {
-    display: flex; }
-    .index .nosotros div .nosotros-img {
-      width: 600px;
-      height: auto;
-      margin: 20px; }
-    .index .nosotros div p {
-      margin: 20px; }
+  padding-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #f3f3f3; }
+  .index .accesorio h2 {
+    font-size: 40px;
+    text-align: center; }
+  .index .accesorio .accesorio-contenedor {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px; }
+    .index .accesorio .accesorio-contenedor .tarjeta-producto {
+      margin: 20px;
+      background-color: white;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      transition: transform 0.2s; }
+      .index .accesorio .accesorio-contenedor .tarjeta-producto:hover {
+        transform: translateY(-5px); }
+      .index .accesorio .accesorio-contenedor .tarjeta-producto .tarjeta-imagen {
+        width: 100%;
+        height: 200px;
+        padding: 2px;
+        object-fit: contain; }
+      .index .accesorio .accesorio-contenedor .tarjeta-producto .tarjeta-info {
+        padding: 16px; }
+        .index .accesorio .accesorio-contenedor .tarjeta-producto .tarjeta-info .tarjeta-nombre {
+          font-size: 1.2em;
+          margin: 0 0 8px;
+          color: #333; }
+        .index .accesorio .accesorio-contenedor .tarjeta-producto .tarjeta-info .tarjeta-precio {
+          font-size: 1.1em;
+          margin: 0 0 16px;
+          color: #00a650; }
+        .index .accesorio .accesorio-contenedor .tarjeta-producto .tarjeta-info .tarjeta-boton {
+          border: none;
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 1em;
+          border-radius: 4px;
+          cursor: pointer;
+          width: 100%;
+          box-sizing: border-box; }
+          .index .accesorio .accesorio-contenedor .tarjeta-producto .tarjeta-info .tarjeta-boton:hover {
+            background-color: gray;
+            color: white; }
 
 /**-----CONTACTOS-------*/
 .datos {
@@ -197,17 +370,32 @@ header nav div .header-icono a {
         color: white; }
 
 /**-----NOTICIAS-------*/
-.noticias {
-  display: flex;
-  flex-direction: column; }
-  .noticias h1 {
-    margin: 20px; }
-  .noticias div {
-    display: flex;
-    margin: 20px; }
-    .noticias div a {
-      text-decoration: none;
-      border-top-color: gray; }
+.nosotros-contenedor {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); }
+  .nosotros-contenedor .nosotros-item {
+    margin-bottom: 30px; }
+    .nosotros-contenedor .nosotros-item h2 {
+      margin-top: 0;
+      color: #333; }
+    .nosotros-contenedor .nosotros-item p {
+      font-size: 1em;
+      color: #555; }
+    .nosotros-contenedor .nosotros-item ul {
+      padding-left: 20px;
+      list-style-type: disc; }
+      .nosotros-contenedor .nosotros-item ul li {
+        margin-bottom: 10px; }
+  .nosotros-contenedor .nosotros-resumen {
+    text-align: center;
+    margin-top: 40px; }
+    .nosotros-contenedor .nosotros-resumen p {
+      font-size: 1.1em;
+      color: #555; }
 
 /**-----PRODUCTOS-------*/
 .producto h2 {
@@ -355,6 +543,59 @@ footer {
   .redes-mobile {
     display: none; } }
 
+@media (max-width: 768px) {
+  .reviews-contenedor {
+    padding: 15px; }
+  h2 {
+    font-size: 24px; }
+  .review h3 {
+    font-size: 18px; }
+  .dejar-review h3 {
+    font-size: 22px; }
+  .dejar-review .boton {
+    padding: 8px 16px;
+    font-size: 14px; } }
+
+@media (max-width: 480px) {
+  .reviews-contenedor {
+    margin: 20px auto;
+    padding: 10px; }
+  h2 {
+    font-size: 20px; }
+  .review h3 {
+    font-size: 16px; }
+  .dejar-review h3 {
+    font-size: 20px; }
+  .dejar-review .boton {
+    padding: 6px 12px;
+    font-size: 12px; } }
+
+@media (max-width: 620px) {
+  .ofertas .ofertas-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%; } }
+
+@media (max-width: 620px) {
+  .destacado .destacado-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%; } }
+
+@media (max-width: 620px) {
+  .accesorio h2 {
+    font-size: 30px; }
+  .accesorio .accesorio-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-direction: column;
+    width: 100%; } }
+
 /*--------------productos------------------*/
 @media screen and (max-width: 900px) {
   .tarjeta-producto {
@@ -400,4 +641,55 @@ footer {
     width: 170px; }
   .tarjeta-info {
     width: fit-content;
-    text-align: left; } }
+    margin: 0;
+    text-align: left;
+    font-size: 15px; } }
+
+/*--------------nosotros------------------*/
+@media (max-width: 1024px) {
+  .nosotros-item {
+    text-align: center; }
+    .nosotros-item h2 {
+      font-size: 1.2em; }
+    .nosotros-item p {
+      font-size: 0.9em; }
+    .nosotros-item ul {
+      padding-left: 0;
+      margin: 0;
+      text-align: left; }
+      .nosotros-item ul li {
+        font-size: 0.9em; }
+  .nosotros-resumen p {
+    font-size: 1em; } }
+
+@media (max-width: 768px) {
+  .nosotros-item {
+    text-align: center; }
+    .nosotros-item h2 {
+      font-size: 1.1em; }
+    .nosotros-item p {
+      font-size: 0.9em; }
+    .nosotros-item ul {
+      padding-left: 0;
+      margin: 0;
+      text-align: center; }
+      .nosotros-item ul li {
+        font-size: 0.9em; }
+  .nosotros-resumen p {
+    font-size: 0.9em; } }
+
+@media (max-width: 480px) {
+  .nosotros-item {
+    padding: 10px; }
+    .nosotros-item h2 {
+      font-size: 1em; }
+    .nosotros-item p {
+      font-size: 0.8em; }
+    .nosotros-item ul {
+      padding-left: 0;
+      margin: 0;
+      text-align: center; }
+      .nosotros-item ul li {
+        font-size: 0.8em; }
+  .nosotros-resumen p {
+    font-size: 0.8em; } }
